@@ -1,49 +1,114 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+  <meta charset="UTF-8">
+  <!-- configura a codificação de caracteres do navegador para o UTF-8-->
+  <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+  <!-- Adiciona o ícone de aba de navegador-->
+  <title>HOME - IFSP - Pirituba</title>
+  <!-- Adiciona o título na aba do navegador-->
+  <script src="js/disabling.js"></script>
+  <link rel='stylesheet' href="css/style.css" </head>
 
 <body>
-      <ul style="position: fixed;top: 0;right: 0;">
-      <a href="https://replit.com/@WESLEYMANHA/ASW#home.html">Home</a>
-      <a href="https://replit.com/@WESLEYMANHA/ASW#contato.html">Contato</a>
-      <a href="https://replit.com/@WESLEYMANHA/ASW#sobre.html">Contato</a>
-    </ul>
-  <img src="https://ptb.ifsp.edu.br/images/logo_ifsp_PRT.png" style="background-color: green;">
-  <ul>
-    <li><strong>Curso de HTML</strong></li>
-    <li><a href="https://replit.com/@WESLEYMANHA/ASW#ads.html">ADS</a></li>
-    <li><a href="link_para_css">ADM</a></li>
-    <li><a href="link_para_javascript">LETRAS</a></li>
-    <li><a href="link_para_python">GESTÃO PUBLICA</a></li>
-</ul>
-</br>
-  <img width="560" height="315" src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/SEJA_RARO.jpg?raw=true">
-  </br>
-  <h3>SOBRE A BIBLIOTECA</h3>
-</br>
-  <a href="URL_DO_DESTINO">
-    <img src="https://github.com/DWBA4/dwba4_semana_imagens/blob/master/library.jpeg?raw=true">
-</a>
-  </br>
-  <h3>Conheça novos titulos disponiveis na biblioteca</h3>
-  <p>publicado 04/08/2023</p>
-  </br>
-  <h3>Conheça o SUAP</h3>
-  </br>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/JW6ludPAGQc" frameborder="0" allowfullscreen></iframe>
-  <script src="script.js"></script>
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+
+  <header id="cabecalho">
+    <!-- Indica o cabeçalho do nosso documento-->
+
+    <nav>
+      <object width="100%" height="65px" data="menu.html"></object>
+    </nav>
+
+    <nav class='ifsp'>   
+      <img src="Imagens/Logo.jpg" alt=" "  />
+      <!-- anexa imagem e texto alternativo-->
+    </nav>
+
+
+    <nav>
+      <!-- Indica que o conteúdo é composto de links de navegação-->
+      <p><b>Cursos</b></p>
+      <ul>
+        <!-- Estrutura de lista não ordenada -->
+        <li>
+          <!-- Item de lista -->
+          <a href="ads.html">Análise e Desenvolvimento de Sistemas</a>
+        </li>
+        <li>
+          <a href="#">Engenharia de Produção</a>
+        </li>
+        <li>
+          <a href="#">Gestão em Tecnologia da Informação</a>
+        </li>
+        <li>
+          <a href="#">Letras</a>
+        </li>
+        <li>
+          <a href="#">Gestão Pública</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <!-- indica que é o conteúdo principal dessa página -->
+
+    <aside>
+      <!-- indica que é um conteúdo a parte do princial, auxiliar-->
+      <p><b>Eventos</b></p>
+      <figure>
+        <img class= "imagem-oval" src="Imagens/SEJA_RARO.jpg" alt="Palestra Seja Raro" width="50%" height="50%">
+        <figcaption>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</figcaption>
+      </figure>
+    </aside>
+
+
+    <section>
+      <!-- Indica que é uma seção/parte do documento-->
+      <h1>
+        Sobre a Biblioteca
+      </h1>
+
+      <article>
+        <!-- Indica que o conteúdo é completo, ou seja, não depende d eoutros trechos do documento para ter significado -->
+        <img src="Imagens/library.jpeg" alt="Biblioteca" />
+        <h2>Conheça os novos títulos disponíveis na nossa biblioteca</h2>
+        <h6>
+          <!-- Título de terceiro nível -->
+          Publicado: Quarta-feira, 14 de agosto de 2019
+        </h6>
+      </article>
+    </section>
+    <section>
+      <h1>
+        Conheça o SUAP
+      </h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/yVbOcB1ryh0" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+  </main>
+
+  <footer>
+    <br><br>
+    <a href="#cabecalho"><img src="Imagens/MoveTop.png" width="41" height="43" title="Mover para o topo"
+        alt="Mover para o topo"></a>
+    <object width="100%" height="200px" data="rodape.html"></object>
+
+  </footer>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/8.8.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+
 </body>
 
 </html>
