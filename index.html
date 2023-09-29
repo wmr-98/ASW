@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Principal</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Carrossel de Imagens</title>
 </head>
 <body>
-    <h1>Introdução a JavaScript</h1>
-    <ul>
-        <li><a href="index1.html">Questão 1</a></li>
-        <li><a href="index2.html">Questão 2</a></li>
-        <li><a href="index3.html">Questão 3</a></li>
-        <li><a href="index4.html">Questão 4</a></li>
-    </ul>
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="residencia.png" alt="Imagem 1">
+            <img src="snct.jpg" alt="Imagem 2">
+            <img src="eleicoes.jpg" alt="Imagem 3">
+        </div>
+        <button id="prevBtn">Anterior</button>
+        <button id="nextBtn">Próxima</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
